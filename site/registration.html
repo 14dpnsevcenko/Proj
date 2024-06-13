@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+    <script src="https://kit.fontawesome.com/2eeb108b6b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Registration</h1>
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+                <a href="index.html">Home</a>
+                <a href="sales.html">Sales</a>
+                <a href="search.html">Search</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="RegForm">
+            <div class="form-box">  
+                <h1 id="title">Sign Up</h1>
+                <form>
+                    <div class="input-group">
+                        <div class="input-field" id="nameField">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <input type="text" placeholder="Name">
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fa-solid fa-inbox"></i>
+                            <input type="email" placeholder="Email">
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <p>Lost password? <a href="#" id="forgotPasswordLink">Click here!</a></p>
+                    </div>
+                    <div class="btn-field">
+                        <button type="button" id="signupBtn">Sign Up</button>
+                        <button type="button" id="signinBtn" class="disable">Sign In</button>
+                    </div>
+                </form>
+                <button type="button" id="registerBtn" class="register-btn">Register</button>
+                <div id="registrationMessage"></div>
+            </div>
+        </div>    
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ticket Shop</p>
+        </div>
+    </footer>
+
+    <script>
+        let signupBtn = document.getElementById("signupBtn");
+        let signinBtn = document.getElementById("signinBtn");
+        let nameField = document.getElementById("nameField");
+        let title = document.getElementById("title");
+        let registrationMessage = document.getElementById("registrationMessage");
+        let forgotPasswordLink = document.getElementById("forgotPasswordLink");
+        let registerBtn = document.getElementById("registerBtn");
+
+        signinBtn.onclick = function() {
+            nameField.style.maxHeight = "0";
+            title.innerHTML = "Sign In";
+            signupBtn.classList.add("disable");
+            signinBtn.classList.remove("disable");
+            registerBtn.innerHTML = "Enter";
+        }
+
+        signupBtn.onclick = function() {
+            nameField.style.maxHeight = "60px";
+            title.innerHTML = "Sign Up";
+            signupBtn.classList.remove("disable");
+            signinBtn.classList.add("disable");
+            registerBtn.innerHTML = "Register";
+            registrationMessage.innerHTML = "";
+        }
+
+        forgotPasswordLink.onclick = function(event) {
+            event.preventDefault();
+            alert("Password recovery instructions have been sent to your email.");
+        }
+
+        registerBtn.onclick = function() {
+            if (registerBtn.innerHTML === "Register") {
+                registrationMessage.innerHTML = "<p>Registration has been approved!</p>";
+                registrationMessage.style.color = "gray";
+            } else {
+                registrationMessage.innerHTML = "<p>You have successfully entered!</p>";
+                registrationMessage.style.color = "gray";
+            }
+        }
+    </script>
+</body>
+</html>

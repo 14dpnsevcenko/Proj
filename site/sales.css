@@ -1,0 +1,111 @@
+/* Styles for the main content */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #333, #f8f8f8); /* Gradient from deep gray to white */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles for the header */
+
+header {
+    background: linear-gradient(to bottom, #333, transparent); /* Gradient from deep gray to transparent */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nav-buttons {
+    margin-top: 20px;
+}
+
+.nav-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #555;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons a:hover {
+    background-color: #777;
+}
+
+/* Styles for the main content */
+
+main {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.ticket-offers {
+    text-align: center;
+}
+
+.offer {
+    margin-bottom: 40px;
+}
+
+.offer img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 8px; /* Apply border radius */
+    display: block; /* Set as block element to avoid alignment issues */
+    margin: 0 auto; /* Center the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.offer h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.offer p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Styles for the footer */
+
+footer {
+    background: linear-gradient(to top, #333, transparent); /* Gradient from deep gray to transparent */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+footer p {
+    margin: 0;
+}

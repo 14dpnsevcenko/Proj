@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to bottom, #333, #f8f8f8);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nav-buttons {
+    margin-top: 20px;
+}
+
+.nav-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #555;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons a:hover {
+    background-color: #777;
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Search Form Styles */
+#searchForm {
+    margin-bottom: 40px;
+}
+
+#searchForm label {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#searchForm input[type="text"],
+#searchForm select {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+#searchForm button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+#searchForm button:hover {
+    background-color: #555;
+}
+
+/* Ticket Items Styles */
+.ticket-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.ticket-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.ticket-item p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.ticket-item button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.ticket-item button:hover {
+    background-color: #218838;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+footer p {
+    margin: 0;
+}

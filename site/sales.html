@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Sales</title>
+    <link rel="stylesheet" href="sales.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Ticket Sales</h1>
+            <p>Choose tickets for the best events right now!</p>
+            <div class="nav-buttons">
+                <a href="index.html">Home</a>
+                <a href="registration.html">Registration</a>
+                <a href="search.html">Search</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="ticket-offers">
+            <div class="container">
+                <h2>Current Offers</h2>
+                <div class="offer">
+                    <img src="images/music.jpg" alt="Concert">
+                    <h3>Queen Concert</h3>
+                    <p>Special Price: $200</p>
+                    <button onclick="window.location.href='concert-event.html'">Buy Ticket</button>
+                </div>
+                <div class="offer">
+                    <img src="images/football.jpg" alt="Sports Event">
+                    <h3>Football Match</h3>
+                    <p>20% Discount on all tickets!</p>
+                    <button onclick="window.location.href='sports-event.html'">Buy Ticket</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ticket Shop</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript function to redirect to the ticket sales website
+        function buyTicket(url) {
+            window.location.href = url; // redirect to the specified URL
+        }
+    </script>
+</body>
+</html>

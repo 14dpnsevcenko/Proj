@@ -1,0 +1,108 @@
+/* Стили для основного содержимого */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Стили для шапки */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Стили для основного содержимого */
+
+main {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.event-details {
+    text-align: center;
+}
+
+.event-details img {
+    max-width: 200%;
+    height: auto;
+    border-radius: 8px; /* Применяем скругление углов */
+    display: block; /* Устанавливаем в блочный элемент, чтобы избежать проблем с выравниванием */
+    margin: 0 auto; /* Центрируем фотографию */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+}
+
+.event-details h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.event-details p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Styles for navigation buttons */
+
+.nav-buttons {
+    margin-top: 20px;
+}
+
+.nav-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons a:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+footer p {
+    margin: 0;
+}

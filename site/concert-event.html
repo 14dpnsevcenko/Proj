@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Ticket</title>
+    <link rel="stylesheet" href="concert-event.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Queen Concert</h1>
+            <div class="nav-buttons">
+                <a href="index.html">Home</a>
+                <a href="registration.html">Registration</a>
+                <a href="sales.html">Sales</a>
+                <a href="search.html">Search</a>
+                <a href="aboutus.html">About Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="event-details">
+            <div class="container">
+                <img src="images/queen.jpg" alt="Queen Concert">
+                <h2>Queen Concert</h2>
+                <p>Date: May 15, 2024</p>
+                <p>Price: $200</p>
+                <p>Location: Arena Riga, Riga</p>
+                <button onclick="buyTicket('https://www.donationalerts.com/r/nen4iks')">Buy Ticket</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ticket Shop</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript function to redirect to the ticket sales website
+        function buyTicket(url) {
+            window.location.href = url; // redirect to the specified URL
+        }
+    </script>
+</body>
+</html>

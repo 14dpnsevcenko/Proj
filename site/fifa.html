@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA World Cup Final</title>
+    <link rel="stylesheet" href="fifa.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>FIFA World Cup Final</h1>
+            <div class="nav-buttons">
+                <a href="index.html">Home</a>
+                <a href="registration.html">Registration</a>
+                <a href="sales.html">Sales</a>
+                <a href="search.html">Search</a>
+                <a href="aboutus.html">About Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="event-details">
+            <div class="container">
+                <img src="images/fifa.png" alt="FIFA World Cup Final">
+                <h2>FIFA World Cup Final</h2>
+                <p>Date: June 30, 2026</p>
+                <p>Price: $200</p>
+                <p>Venue: Lusail Iconic Stadium, Qatar</p>
+                <button onclick="buyTicket('https://www.donationalerts.com/r/nen4iks')">Buy Ticket</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ticket Shop</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript function to redirect to the ticket sales website
+        function buyTicket(url) {
+            window.location.href = url; // redirect to the specified URL
+        }
+    </script>
+</body>
+</html>
