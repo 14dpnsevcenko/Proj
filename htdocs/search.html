@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search and Sort Tickets</title>
+    <link rel="stylesheet" href="search.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Search and Sort Tickets</h1>
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+                <a href="index.php">Home</a>
+                <a href="registerin.php">Registration</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Product Search and Sort</h1>
+            
+            <div>
+                <label for="search">Search:</label>
+                <input type="text" id="search" name="search">
+            </div>
+            
+            <div>
+                <label for="sort">Sort by:</label>
+                <select id="sort" name="sort">
+                    <option value="name">Name</option>
+                    <option value="date">Date</option>
+                    <option value="price">Price</option>
+                    <option value="place">Place</option>
+                </select>
+            </div>
+        
+            <div>
+                <label for="order">Order:</label>
+                <select id="order" name="order">
+                    <option value="ASC">Ascending</option>
+                    <option value="DESC">Descending</option>
+                </select>
+            </div>
+        
+            <button id="searchButton">Search</button>
+        
+            <div id="results"></div>
+        </div>
+
+    <script src="jss.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,304 @@
+/* General styles for the page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.background {
+    background: linear-gradient(to bottom, #333, #f8f8f8); /* Gradient from deep gray to white */
+    background-size: 100% 100vh; /* Gradient height to fill the page */
+    background-repeat: no-repeat; /* Disable background repeat */
+    background-position: center; /* Center the background */
+    flex: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Styles for the header */
+
+header {
+    background: linear-gradient(to bottom, #333, transparent); /* Gradient from deep gray to transparent */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.header-container p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Styles for the main content */
+
+main {
+    padding: 40px 0;
+    text-align: center;
+    flex: 1;
+}
+
+.featured-events-section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.featured-events-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    width: 45%;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.event-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Styles for the footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media query for responsive design */
+
+@media (max-width: 768px) {
+    .featured-events-container {
+        flex-direction: column;
+    }
+}
+
+/* Styles for navigation buttons */
+
+.nav-buttons {
+    margin-top: 20px;
+}
+
+.nav-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons a:hover {
+    background-color: #555;
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.report-button {
+    position: absolute;
+    top: 180px;
+    right: 300px;
+    padding: 10px 20px;
+    background-color: #ff5722; /* Button background color */
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px; /* Border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensure the button is above other elements */
+}
+
+.report-button:hover {
+    background-color: #e64a19; /* Button background color on hover */
+}
+
+.report-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Button background color */
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px; /* Border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.report-button:hover {
+    background-color: #292929; /* Button background color on hover */
+}
+
+/* Pop-up Styles */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px; /* Maximum width for large screens */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 10px;
+}
+
+form input[type="tel"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="time"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.event-card {
+    max-width: 20%;
+    height: auto;
+    border-radius: 8px; /* Apply border radius */
+    display: block; /* Set as block element to avoid alignment issues */
+    margin: 0 auto; /* Center the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.buy-ticket-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333; /* Button background color */
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px; /* Border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-ticket-button:hover {
+    background-color: #555; /* Button background color on hover */
+}
+
+/* Стили для кнопки Просмотр корзины */
+.view-cart-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.view-cart-button:hover {
+    background-color: #45a049;
+}
